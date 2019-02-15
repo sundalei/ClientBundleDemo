@@ -22,7 +22,22 @@ public class ClientBundleDemo implements EntryPoint, ValueChangeHandler<String> 
 
 	@Override
 	public void onValueChange(ValueChangeEvent<String> event) {
-		// TODO Auto-generated method stub
-
+		// Get the token from the event
+		String page = event.getValue().trim();
+		// Check if the token is null or empty
+		if ((page == null) || (page.equals(""))) {
+		}
+		// showHomePage();
+		// Else check what the token is and call the appropriate method.
+		else if (page.equals(HistoryTokens.DATA))
+			examples.showData();
+		else if (page.equals(HistoryTokens.TEXT))
+			examples.showText();
+		else if (page.equals(HistoryTokens.IMAGE))
+			examples.showImage();
+		else if (page.equals(HistoryTokens.CSS))
+			examples.showCss();
+		else
+			examples.showInstructionsPanel();
 	}
 }
