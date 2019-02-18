@@ -10,14 +10,14 @@ public interface DataResources extends ClientBundle {
   DataResources IMPL = 
     (DataResources) GWT.create(DataResources.class);
 
-  @Source("BigPhoto.jpg")
+  @Source("resources/BigPhoto.jpg")
   DataResource bigPhoto();
 
   @DoNotEmbed
-  @Source("Document.pdf")
+  @Source("resources/Document.pdf")
   DataResource document();
 
   @MimeType("image/png")
-  @Source("slashdot.png")
+  @Source("resources/slashdot.png")
   DataResource slashdot();
 }

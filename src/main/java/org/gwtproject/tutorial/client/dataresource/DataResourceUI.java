@@ -21,8 +21,10 @@ public class DataResourceUI extends Composite{
   public DataResourceUI() {
     initWidget(uiBinder.createAndBindUi(this));
   }
+  
   @UiField
   DataResources res;
+  
   @UiField
   Button docButton;
 
