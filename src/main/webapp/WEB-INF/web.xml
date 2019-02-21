@@ -16,6 +16,16 @@
     <url-pattern>/clientbundledemo/greet</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+		<servlet-name>themeServlet</servlet-name>
+		<servlet-class>org.gwtproject.tutorial.server.ResourceServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>themeServlet</servlet-name>
+		<url-pattern>/clientbundledemo/CSSResourceService</url-pattern>
+	</servlet-mapping>
+  
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>ClientBundleDemo.html</welcome-file>
